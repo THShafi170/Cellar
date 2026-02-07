@@ -2,6 +2,8 @@
 name = "cellar"
 version = "2.0.0"
 edition = "2021"
+repository = "https://github.com/THShafi170/Cellar"
+license = "MIT"
 
 [lib]
 name = "cellar"
@@ -14,13 +16,11 @@ strip = true
 debug = "limited"
 
 [dependencies]
-log = "0.4"
-widestring = "1.1"
+log = "0.4.29"
+widestring = "1.2.1"
 windebug_logger = "0.1"
-minhook = "0.5"
+minhook = "0.6.0"
 
 [dependencies.windows]
-version = "0.60"
-features = [
-    "Win32_Storage_FileSystem"
-]
+version = "0.62"
+features = ["Win32_Storage_FileSystem"]
